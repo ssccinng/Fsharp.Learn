@@ -111,7 +111,14 @@ let sendMessage addr msg =
     | QQ qq -> printfn "Send message to %d: %s" qq msg
     
     
-    
+
+type Maybe<'a> = 
+| Just of 'a
+| Nothing
+
+type Option<'a> =
+| Some of 'a
+| None
 
 
 
