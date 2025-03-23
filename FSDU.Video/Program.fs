@@ -8,7 +8,6 @@ let getShapeSize = function
     | Rectangle(width, length) -> width * length
     | Circle(radius) -> 3.14 * radius * radius
     | Prism(width, length, height) -> width * length * height
-    
 let getShapeWidth = function
     | Rectangle(width = w) -> w
     | Circle(radius = r) -> 2. * r
@@ -16,7 +15,7 @@ let getShapeWidth = function
     
 printfn "%A" (getShapeSize rect)
 let circle = Circle(5)
-let flag = circle.IsCircle
+// let flag = circle.IsCircle
 printfn "%A" (getShapeWidth circle)
 
 // type Any = | A of Any
